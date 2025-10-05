@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christmas List</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #f9f9f9, #ececec);
+      font-family: "Poppins", sans-serif;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #ffffff;
+      color: #2c2c2c;
+      padding: 25px 0;
+      font-size: 1.8em;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      z-index: 10;
+    }
+
+    #countdown {
+      position: absolute;
+      right: 20px;
+      top: 25px;
+      background: #fff;
+      color: #333;
+      padding: 6px 12px;
+      border-radius: 10px;
+      font-size: 0.9em;
+      font-weight: 600;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    main {
+      margin: 60px auto;
+      max-width: 600px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      padding: 40px 30px;
+      transition: all 0.3s ease;
+    }
+
+    main:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #2c2c2c;
+      margin-bottom: 25px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin: 18px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    button {
+      background: #f2f2f2;
+      color: #333;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 6px 14px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    button:hover {
+      background: #e6e6e6;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    footer a {
+      color: #555;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    footer a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    /* Desk Build Button */
+    #deskBtn {
+      position: fixed;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      background: #333;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1em;
+      box-shadow: 0 0 8px rgba(0,0,0,0.25);
+      transition: 0.2s;
+    }
+
+    #deskBtn:hover {
+      background: #555;
+      transform: translateY(-50%) scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Christmas
+    <div id="countdown"></div>
+  </header>
+
+  <button id="deskBtn" onclick="window.open('desk.html', '_blank')">🛠 Desk Build</button>
+
+  <main>
+    <h2>list</h2>
+    <ul>
+      <li>
+        <a href="https://mykeybrd.com/products/cloud-black-deskmat-1" target="_blank">Mousepad</a>
+        <button>Add</button>
+      </li>
+      <li>
+        <a href="https://www.amazon.co.uk/MechLands-QK61-Programmable-Swappable-Mechanical/dp/B0D8VMD3P3/ref=sr_1_6_sspa?sr=8-6-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY" target="_blank">keyboard</a>
+        <button>Add</button>
+      </li>
+      <li>
+        <a href="https://www.amazon.co.uk/ProtoArc-EC100-Ergonomic-Office-Chair/dp/B0DRY26DQK/ref=sxin_15_pa_sp_search_thematic_sspa?cv_ct_cx=ergonomic%2Bchair&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-3-ad3222ed-9545-4dc8-8dd8-6b2cb5278509-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM" target="_blank">comfy chair</a>
+        <button>Add</button>
+      </li>
+      <li>
+        <a href="https://www.amazon.co.uk/Linsoul-KZ-ZS10-Earphones-Detachable-Black/dp/B09DK2N5G3/ref=sr_1_3_sspa?sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY" target="_blank">Iems</a>
+        <button>Add</button>
+      </li>
+      <li>
+        <a href="https://www.amazon.co.uk/Under-Cable-Management-Drill-Organizers/dp/B0DCFNSVDN/ref=sr_1_1_sspa?sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY" target="_blank">cable rack</a>
+        <button>Add</button>
+      </li>
+      <li>
+        <a href="https://www.amazon.co.uk/XFX-Speedster-MERC310-Graphics-RX-79XMERCB9/dp/B0BNLSW23M/ref=sr_1_2?sr=8-2" target="_blank">graphics card</a>
+        <button>Add</button>
+      </li>
+      <!-- Add more items below -->
+      <li>
+        <a href="https://cleens.co.uk/products/pulse-runner-graphite?variant=46645701279984" target="_blank">shoes</a>
+        <button>Add</button>
+      </li>
+      <li>
+        <a href="https://www.amazon.co.uk/COSTWAY-Semi-weighted-Electric-Adjustable-Beginners/dp/B0FMJRM72H/ref=sxbs_pa_sp_search_thematic_btf_sspa?cv_ct_cx=piano&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-4-3b5b3493-51d7-4a29-900f-4d77b489bca4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWNfYnRm" target="_blank">Piano Keyboard</a>
+        <button>Add</button>
+      </li>
+	<li>
+        <a href="https://www.amazon.co.uk/FIFINE-Microphone-Streaming-VoiceOver-Monitoring-Black/dp/B0CB68J1D7/ref=sr_1_1_sspa?s=musical-instruments&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY" target="_blank">Mic</a>
+        <button>Add</button>
+      </li>
+    </ul>
+  </main>
+
+  <footer>😎</footer>
+
+  <script>
+    function updateCountdown() {
+      const christmas = new Date("December 25, 2025 00:00:00").getTime();
+      const now = new Date().getTime();
+      const diff = christmas - now;
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      const el = document.getElementById("countdown");
+      if (diff > 0) {
+        el.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      } else {
+        el.textContent = "Christmas yipee 😉";
+      }
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+</body>
+</html>
